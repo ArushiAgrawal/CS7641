@@ -19,7 +19,7 @@ We aim to create deep-learning based models that can classify human emotions.
 ## Methods 
 
 We will be using proven convolutional neural network architectures for image classification. We plan to consider a few candidate models: 
-* Simple 2-3 layer ConvNet,  
+* Vanilla Convolutional Neural Network
 * ResNet variants: 18, 34, 50, 101 
 * DenseNet 
 
