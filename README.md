@@ -10,12 +10,11 @@ For our project, we are using [Facial Image Recognition Dataset (FER2013)](https
 
 ![Data Example](dataset_example.png)
  
-## Problem definition 
+## Problem Definition 
 
 Market research has proven that predicting sentiments correctly can be a huge source of growth for businesses, as it could help to gauge customer mood towards their brand or product. In addition to marketing and advertising, recognizing facial emotions is also important in various other fields – surveillance and law enforcement, video game testing, driving safety in cars, etc.  
 
 We aim to create deep-learning based models that can classify human emotions.  
- 
 
 ## Methods 
 
@@ -30,7 +29,7 @@ In addition to the different Neural network architectures, we also plan to perfo
 * Transfer Learning: To utilize the feature representation from the same models trained on larger datasets 
 * Visualization of activations and kernels: To understand feature representations of different emotions and the learned kernels. 
 
-## Potential results and Discussion 
+## Potential Results and Discussion 
 
 Metrics to be considered –
 * Evaluation of models’ performances using Top-k Accuracy & confusion matrix.  
@@ -41,8 +40,7 @@ Challenges in emotion recognition –
 * It is very tough to detect all possible cues for an emotion, and some cues can be common among different emotions. e.g., Visual cues like furrowed eyebrows can mean something aside from anger, and other non-so-obvious facial cues may be subtle hints of anger. 
 * Bias based on race, gender, and age. 
  
-
-## References -  
+## References
 
 1) [Huang, Gao, Zhuang Liu, Laurens Van Der Maaten, and Kilian Q. Weinberger. "Densely connected convolutional networks." In Proceedings of the IEEE conference on computer vision and pattern recognition, pp. 4700-4708. 2017](https://arxiv.org/abs/1608.06993)
 
