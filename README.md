@@ -1,37 +1,39 @@
-## Welcome to GitHub Pages
+## Recognition of Facial Expressions
+Identifying emotions from an image
 
-You can use the [editor on GitHub](https://github.com/ArushiAgrawal/congenial-octo-computing-machine/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+## Introduction/Background
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Facial expression is the most universal, natural, and powerful signal for human beings to convey their thoughts. Emotions don’t have a concrete definition, yet they drive every other decision made in our lives. Market research has proven that predicting sentiments correctly can be a huge source of growth for businesses, as it could help to gauge customer mood towards their brand or product. 
 
-### Markdown
+A lot of research has been done in the area. *Lit review*
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+For our project, we are using Kaggle’s fer2013 dataset – an open-source dataset containing around 30 thousand 48x48 pixel grayscale images of faces.  This dataset was published during the International Conference on Machine Learning (ICML). The emotions in the images belong to the seven categories - anger, disgust, fear, happy, sad, surprise, and neutral.
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+## Problem definition
+Recognizing facial emotions is important in various fields – marketing and advertising, surveillance and law enforcement, video game testing, safe and personalized cars, etc. 
+We aim to create neural network models that could identify human emotions. 
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+## Methods
 
-**Bold** and _Italic_ and `Code` text
+Nueral network models - 
+* Simple 2-3 layer Convnet
+* ResNet variants: 18, 34, 50 (most common), 101..., 
+* DenseNet(?)
 
-[Link](url) and ![Image](src)
-```
+Image Augmentation Augmentation, Learning Rate Finder/Scheduler, Transfer Learning, activations and kernel visualizations, Top-k Accuracy, confusion matrix, 
+Evaluate most incorrectly predicted images: predicted vs true classes to analyze confusing emotions
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+## Potential results and Discussion
 
-### Jekyll Themes
+### Metrics to be considered - 
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ArushiAgrawal/congenial-octo-computing-machine/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### Challenges in emotion recognition – 
+* Different people can interpret emotions in different ways, and hence the training of the model (training data) can not be 100% accurate. 
+* It’s very tough to detect all possible cues for an emotion, and some cues can be common among different emotions. Eg: Visual cues like furrowed eyebrows can mean something aside from anger, and other non-so-obvious facial cues may be subtle hints of anger.
+* Bias based on race, gender, age, or color 
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## References - 
+* Huang, Gao, Zhuang Liu, Laurens Van Der Maaten, and Kilian Q. Weinberger. "Densely connected convolutional networks." In Proceedings of the IEEE conference on computer vision and pattern recognition, pp. 4700-4708. 2017.
+* He, Kaiming, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. "Deep residual learning for image recognition." In Proceedings of the IEEE conference on computer vision and pattern recognition, pp. 770-778. 2016.
