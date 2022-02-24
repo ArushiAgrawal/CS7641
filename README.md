@@ -1,5 +1,3 @@
-## Recognition of Facial Expressions
-Identifying emotions from an image
 
 ## Introduction/Background
 
