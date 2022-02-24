@@ -34,7 +34,7 @@ In addition to the different Neural network architectures, we also plan to perfo
 Metrics to be considered:
 * Accuracy, Precision, Recall, F-Beta Score
 * Evaluation of models’ performances using Top-k Accuracy & confusion matrix.  
-* Evaluation of Incorrect predictions: To analyze which emotion classes are hard to tell apart by the models 
+* Evaluation of incorrect predictions: To analyze which emotion classes are hard to tell apart by the models 
 
 Challenges in emotion recognition:
 * Different people can interpret emotions in different ways, and hence the training of the model (training data) may not be 100% reliable. 
