@@ -37,7 +37,7 @@ Metrics to be considered:
 * Evaluation of incorrect predictions: To analyze which emotion classes are hard to tell apart by the models 
 
 Challenges in emotion recognition:
-* Different people can interpret emotions in different ways, and hence the training of the model (training data) may not be 100% reliable. 
+* Different people can interpret emotions in different ways, and hence the training data may not be 100% reliable. 
 * It is very tough to detect all possible cues for an emotion, and some cues can be common among different emotions. e.g., Visual cues like furrowed eyebrows can mean something aside from anger, and other non-so-obvious facial cues may be subtle hints of anger. 
 * Bias based on race, gender, and age. 
 
