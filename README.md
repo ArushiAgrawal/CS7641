@@ -18,7 +18,7 @@ We aim to create neural network models that could identify human emotions.
 Nueral network models - 
 * Simple 2-3 layer Convnet
 * ResNet variants: 18, 34, 50 (most common), 101..., 
-* DenseNet(?)
+* DenseNet
 
 Image Augmentation Augmentation, Learning Rate Finder/Scheduler, Transfer Learning, activations and kernel visualizations, Top-k Accuracy, confusion matrix, 
 Evaluate most incorrectly predicted images: predicted vs true classes to analyze confusing emotions
