@@ -12,7 +12,7 @@ For our project, we are using Kaggle’s fer2013 dataset – an open-source data
 
 ## Problem definition
 Recognizing facial emotions is important in various fields – marketing and advertising, surveillance and law enforcement, video game testing, safe and personalized cars, etc. 
-We aim to create neural network models that could identify human emotions. 
+We aim to create neural network models that can identify human emotions. 
 
 
 ## Methods
