@@ -32,6 +32,7 @@ In addition to the different Neural network architectures, we also plan to perfo
 ## Potential Results and Discussion 
 
 Metrics to be considered –
+* Accuracy, Precision, Recall, F-Beta Score
 * Evaluation of models’ performances using Top-k Accuracy & confusion matrix.  
 * Evaluation of Incorrect predictions: To analyze which emotion classes are hard to tell apart by the models 
 
