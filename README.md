@@ -31,12 +31,12 @@ In addition to the different Neural network architectures, we also plan to perfo
 
 ## Potential Results and Discussion 
 
-Metrics to be considered –
+Metrics to be considered:
 * Accuracy, Precision, Recall, F-Beta Score
 * Evaluation of models’ performances using Top-k Accuracy & confusion matrix.  
 * Evaluation of Incorrect predictions: To analyze which emotion classes are hard to tell apart by the models 
 
-Challenges in emotion recognition –  
+Challenges in emotion recognition:
 * Different people can interpret emotions in different ways, and hence the training of the model (training data) may not be 100% reliable. 
 * It is very tough to detect all possible cues for an emotion, and some cues can be common among different emotions. e.g., Visual cues like furrowed eyebrows can mean something aside from anger, and other non-so-obvious facial cues may be subtle hints of anger. 
 * Bias based on race, gender, and age. 
