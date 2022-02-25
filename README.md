@@ -1,6 +1,7 @@
 # Recognition of Facial Expressions 
 
 <p style='text-align: justify;'>
+ 
 ## Introduction 
 
 Facial expression is the most universal, natural, and powerful signal for human beings to convey their thoughts. Emotions don’t have a concrete definition, yet they drive every other decision made in our lives. 
