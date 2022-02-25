@@ -1,6 +1,4 @@
-# Recognition of Facial Expressions 
-
-<p style='text-align: justify;'>
+# Recognition of Facial Expressions
  
 ## Introduction 
 
@@ -54,5 +52,3 @@ Challenges in emotion recognition:
 2) [He, Kaiming, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. "Deep residual learning for image recognition." In Proceedings of the IEEE conference on computer vision and pattern recognition, pp. 770-778. 2016](https://ieeexplore.ieee.org/document/7780459)
 
 3) [Wafa Mellouk, Wahida Handouzi. “Facial emotion recognition using deep learning: review and insights.” Procedia Computer Science, Volume 175, pp. 689-694, 2020](https://www.sciencedirect.com/science/article/pii/S1877050920318019)
-
-</p>
