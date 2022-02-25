@@ -4,9 +4,9 @@
 
 Facial expression is the most universal, natural, and powerful signal for human beings to convey their thoughts. Emotions don’t have a concrete definition, yet they drive every other decision made in our lives. 
 
-A substantial amount of research has been done in the area. *Lit review* 
+A substantial amount of research has been done in the area.
 
-[3] describes different architectures of CNN and CNN-LSTM for accurate detection of human emotions. 
+The depth of representations is of central importance for many visual recognition tasks. However, training Deep neural networks is difficult. The two widely used models to overcome these limitations are ResNets and DenseNet. ResNets use skip connections from initial layers to later ones to reformulate the layers as learning residual functions with reference to the layer inputs and thus ease the training of substantially deep networks[2]. Dense Convolutional Network (DenseNet), connects each layer to every other layer in a feed-forward fashion and help alleviate the vanishing-gradient problem, strengthen feature propagation, encourage feature reuse, and substantially reduce the number of parameters[1].  
 
 For our project, we are using [Facial Image Recognition Dataset (FER2013)](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data) – an open-source dataset containing approximately 30 thousand labelled 48x48 pixel grayscale images of faces. This dataset was published during the International Conference on Machine Learning (ICML). The emotions in the images belong to the seven categories - anger, disgust, fear, happy, sad, surprise, and neutral.
 
