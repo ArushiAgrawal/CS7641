@@ -6,6 +6,8 @@ Facial expression is the most universal, natural, and powerful signal for human 
 
 A substantial amount of research has been done in the area. *Lit review* 
 
+[3] describes different architectures of CNN and CNN-LSTM for accurate detection of human emotions. 
+
 For our project, we are using [Facial Image Recognition Dataset (FER2013)](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data) – an open-source dataset containing approximately 30 thousand labelled 48x48 pixel grayscale images of faces. This dataset was published during the International Conference on Machine Learning (ICML). The emotions in the images belong to the seven categories - anger, disgust, fear, happy, sad, surprise, and neutral.
 
 ![Data Example](dataset_example.png)
