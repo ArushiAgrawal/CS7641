@@ -67,9 +67,12 @@ In addition to the different Neural network architectures, we also plan to perfo
 
 Residual networks have shortcut connections (skip-connections) which turn a deep network into its counterpart residual version.  This enables gradients to flow directly through the skip connections backwards from later layers to initial layers and thus helps overcome the vanishing gradient problem to a great extent. ResNet consists on one convolution and pooling layer followed by repetition of this layers. We have evaluated ResNet18 CNN architecture to perform this multiclass classification. We generated the accuracy curves for the training and the validation set as the model kept learning. We got the validation and test set accuracies as 62.7% and 61.1% respectively. In order to investigate the model further, we also plot the Top-3 accuracies curves which represent how well the model performed in order to predict a correct image class within the top 3 classes having the highest softmax probabilities. We also generate the confusion matrix of the test dataset to understand which emotion classes are easy to classify and which emotion pairs are confusing. We found that the model performed really well with the "Happy" class, whereas the "Neutral" class was often confused with the "Sad" class and vice versa. Further, a good proportion of images in "Fear" class also got mis-classified as "Sad".
 
-
-<img width="465" alt="image" src="https://user-images.githubusercontent.com/29612754/161646159-2e76498c-1349-445d-b0a5-593f3e73441b.png">
-<img width="352" alt="image" src="https://user-images.githubusercontent.com/29612754/161646267-5ab242df-a785-4cc5-9274-0d51582346d5.png">
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/29612754/161646159-2e76498c-1349-445d-b0a5-593f3e73441b.png">
+</p>
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/29612754/161646267-5ab242df-a785-4cc5-9274-0d51582346d5.pngg">
+</p>
 
 #### ResNet18 evaluation using t-SNE
 
