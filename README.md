@@ -48,7 +48,7 @@ To visualize the variation in the given collection of images and compare them in
 
 
 ### t-SNE:
-t-SNE is a nonlinear dimensionality reduction technique that is suited for embedding high dimension data into lower dimensional data (2D or 3D) for data visualization. After training our model(Resnet architecture), we collect the features from the last convolutional layer and visualize this feature vector for every image in the training dataset. This embedding feature vectors for the dataset is of the dimension N X 512. 
+t-SNE is a nonlinear dimensionality reduction technique that is suited for embedding high dimension data into lower dimensional data (2D or 3D) for data visualization. After training our model(Resnet18 architecture), we collect the features from the last convolutional layer and visualize this feature vector for every image in the training dataset. This embedding feature vectors for the dataset is of the dimension N X 512. 
 
 We get the following visualization for the training set embeddings
 <p align = "center"> <img width="500" alt="image" src="https://user-images.githubusercontent.com/12424401/161621666-f802f29e-9155-4bfa-9602-c03dec5be01b.png"> </p>
