@@ -4,9 +4,10 @@
 
 Facial expression is the most universal, natural, and powerful signal for human beings to convey their thoughts. Emotions don’t have a concrete definition, yet they drive every other decision made in our lives. 
 
-Our project focuses on recognition of facial expressions. We are using [Facial Image Recognition Dataset (FER2013)](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data) – an open-source dataset containing approximately 30 thousand labelled 48x48 pixel grayscale images of faces. This dataset was published during the International Conference on Machine Learning (ICML). The emotions in the images belong to the seven categories - anger, disgust, fear, happy, sad, surprise, and neutral.
+Our project focuses on recognition of facial expressions. We are using [Facial Image Recognition Dataset (FER2013)](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data) – an open-source dataset containing approximately 30 thousand labelled grayscale images of faces. This dataset was published during the International Conference on Machine Learning (ICML). The emotions in the images belong to the seven categories - anger, disgust, fear, happy, sad, surprise, and neutral.
 
-![Example Data](dataset_example.png)
+<p align = "center"> <img width="762" alt="image" src="https://user-images.githubusercontent.com/41327028/161588858-6e6f14e4-3d7c-4883-9104-f516f378c094.png"> </p>
+<p align = "center"> Fig.1 Sample images </p>
  
 ## Problem Definition 
 
@@ -22,7 +23,7 @@ The depth of representations is of central importance for many visual recognitio
 
 ### EDA (Exploratory Data Analysis): 
 
-The data obtained from [Facial Image Recognition Dataset (FER2013)](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data) consists of 48x48 pixel grayscale images of faces. The face is alomst centered and occupies about the same amount of space in each image. Furthermore, all the images in the training dataset are all clearly labeled with the distinct emotions they represent. 
+The data obtained from [Facial Image Recognition Dataset (FER2013)](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data) consists of 48x48 pixel grayscale images of faces. The face is alomst centered and occupies about the same amount of space in each image. Furthermore, all the images in the training dataset are clearly labeled with the distinct emotions they represent. 
 
 We are using around 30K images for training our models, while 3.5K images for both validating and testing the results. On studing the distribution of images into the corresponding classes, we observed that the data is unbalanced. Out of the seven classes we have, 'Happy' emotion makes upto 25% while 'Disgust' is just 1.5% of the entire dataset. However, this distribution is similar for training, validation and test dataset. 
 
@@ -30,18 +31,26 @@ We are using around 30K images for training our models, while 3.5K images for bo
 <img width="1004" alt="image" src="https://user-images.githubusercontent.com/41327028/161564709-5decd3f8-61a1-4d6d-a55d-d6a08f87e0d0.png"> </p>
 <p align = "center"> Fig.2: Class Distribution </p>
 
+The mean face of all 30K faces in our dataset looks as below - 
+<p align = "center"><img width="300" alt="image" src="https://user-images.githubusercontent.com/41327028/161585948-19087721-11be-4e67-80c0-bf8bfdd74150.png"> </p>
+<p align = "center"> Fig.3: Average face over all images</p>
 
 
+For understanding the difference between the images belonging to different emotions, we checked the <b> Average face </b> for each emotion. In this case, the pixel values are just averaged over different emotions and plotted. We can clearly see that the images obtained are well alligned with the emotion classes they represent. 
 <p align = "center">
 <img width="863" alt="image" src="https://user-images.githubusercontent.com/41327028/161566642-bcf66ec3-e684-4ebd-a289-87a3b000efaa.png"> </p>
-<p align = "center"> Fig.3: Average face by emotion </p>
+<p align = "center"> Fig.4: Average face by emotion </p>
 
 
-
+To visualize the variation in the given collection of images and compare them in a holistic manner, we explored <b> Eigenfaces </b>. The eigenfaces are the principal components of a distribution of faces, basically, the eigenvectors of the covariance matrix of the set of face images. We have considered the first eigen vector (corresponding to the maximum eigen value) for plotting the below images. 
 <p align = "center"> <img width="857" alt="image" src="https://user-images.githubusercontent.com/41327028/161566805-44d6e31c-e7ef-404d-aee9-8cd27cf4b1a5.png"> </p>
-<p align = "center"> Fig.4: Eigen face by emotion </p>
+<p align = "center"> Fig.5: Eigenface by emotion </p>
 
 
+<b> TSNE </b>
+
+
+### Modelling: 
 
 We will be using proven convolutional neural network architectures for image classification. We plan to consider a few candidate models: 
 * Vanilla Convolutional Neural Network
