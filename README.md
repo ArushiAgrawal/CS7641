@@ -20,6 +20,29 @@ The depth of representations is of central importance for many visual recognitio
 
 ## Methods 
 
+### EDA (Exploratory Data Analysis): 
+
+The data obtained from [Facial Image Recognition Dataset (FER2013)](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data) consists of 48x48 pixel grayscale images of faces. The face is alomst centered and occupies about the same amount of space in each image. Furthermore, all the images in the training dataset are all clearly labeled with the distinct emotions they represent. 
+
+We are using around 30K images for training our models, while 3.5K images for both validating and testing the results. On studing the distribution of images into the corresponding classes, we observed that the data is unbalanced. Out of the seven classes we have, 'Happy' emotion makes upto 25% while 'Disgust' is just 1.5% of the entire dataset. However, this distribution is similar for training, validation and test dataset. 
+
+<p align = "center">
+<img width="1004" alt="image" src="https://user-images.githubusercontent.com/41327028/161564709-5decd3f8-61a1-4d6d-a55d-d6a08f87e0d0.png"> </p>
+<p align = "center"> Fig.2: Class Distribution </p>
+
+
+
+<p align = "center">
+<img width="863" alt="image" src="https://user-images.githubusercontent.com/41327028/161566642-bcf66ec3-e684-4ebd-a289-87a3b000efaa.png"> </p>
+<p align = "center"> Fig.3: Average face by emotion </p>
+
+
+
+<p align = "center"> <img width="857" alt="image" src="https://user-images.githubusercontent.com/41327028/161566805-44d6e31c-e7ef-404d-aee9-8cd27cf4b1a5.png"> </p>
+<p align = "center"> Fig.4: Eigen face by emotion </p>
+
+
+
 We will be using proven convolutional neural network architectures for image classification. We plan to consider a few candidate models: 
 * Vanilla Convolutional Neural Network
 * ResNet variants: 18, 34, 50, 101 
@@ -31,7 +54,7 @@ In addition to the different Neural network architectures, we also plan to perfo
 * Transfer Learning: To utilize the feature representation from the same models trained on larger datasets 
 * Visualization of activations and kernels: To understand feature representations of different emotions and the learned kernels. 
 
-## Potential Results and Discussion 
+## Results and Discussion 
 
 Metrics to be considered:
 * Accuracy, Precision, Recall, F-Beta Score
