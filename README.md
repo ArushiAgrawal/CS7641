@@ -63,6 +63,17 @@ In addition to the different Neural network architectures, we also plan to perfo
 * Transfer Learning: To utilize the feature representation from the same models trained on larger datasets 
 * Visualization of activations and kernels: To understand feature representations of different emotions and the learned kernels.  -->
 
+#### ResNet18
+
+Residual networks have shortcut connections (skip-connections) which turn a deep network into its counterpart residual version.  This enables gradients to flow directly through the skip connections backwards from later layers to initial layers and thus helps overcome the vanishing gradient problem to a great extent. ResNet consists on one convolution and pooling layer followed by repetition of this layers. We have evaluated ResNet18 CNN architecture to perform this multiclass classification. We generated the accuracy curves for the training and the validation set as the model kept learning. In order to investigate the model further, we also plot the Top-3 accuracies curves which represent how well the model performed in order to predict a correct image class within the top 3 classes having the highest softmax probabilities. We also generate the confusion matrix tounderstand which emotion classes are easy to classify and which emotion pairs are confusing.
+
+<img width="465" alt="image" src="https://user-images.githubusercontent.com/29612754/161646159-2e76498c-1349-445d-b0a5-593f3e73441b.png">
+<img width="352" alt="image" src="https://user-images.githubusercontent.com/29612754/161646267-5ab242df-a785-4cc5-9274-0d51582346d5.png">
+
+
+Residual networks have shortcut connections (skip-connections) which turn a deep network into its counterpart residual version.  This enables gradients to flow directly through the skip connections backwards from later layers to initial layers and thus helps overcome the vanishing gradient problem to a great extent. ResNet consists on one convolution and pooling layer followed by repetition of this layers. We have evaluated ResNet18 CNN architecture to perform this multiclass classification. We generated the accuracy curves for the training and the validation set as the model kept learning. In order to investigate the model further, we also plot the Top-3 accuracies curves which represent how well the model performed in order to predict a correct image class within the top 3 classes having the highest softmax probabilities.
+
+
 <b> t-SNE </b> is a nonlinear dimensionality reduction technique, well suited for embedding high dimension data into lower dimensional data (2D or 3D) for data visualization. After training our model (Resnet18 architecture), we collected the features from the last convolutional layer and visualized this feature vector for every image in the training dataset. This embedding feature vectors for the dataset is of the dimension N X 512. 
 
 We get the following visualization for the training set embeddings - 
