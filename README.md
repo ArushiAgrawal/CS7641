@@ -99,7 +99,9 @@ Challenges in emotion recognition:
 
 ## Timeline and Responsibilities
 
-![Gantt Chat](gantt_chart.png)
+<p align = "center"> 
+ <img width="886" alt="image" src="https://user-images.githubusercontent.com/41327028/161758365-988186d9-68ea-415c-b4d4-98881e8c113d.png">
+</p>
 
 ## References
 
