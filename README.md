@@ -21,7 +21,7 @@ The depth of representations is of central importance for many visual recognitio
 
 ## Methods and Results
 
-### EDA (Exploratory Data Analysis): 
+### EDA (Exploratory Data Analysis) and PCA (Principal Component Analysis): 
 
 The data obtained from [Facial Image Recognition Dataset (FER2013)](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data) consists of 48x48 pixel grayscale images of faces. The face is alomst centered and occupies about the same amount of space in each image. Furthermore, all the images in the training dataset are clearly labeled with the distinct emotions they represent. 
 
