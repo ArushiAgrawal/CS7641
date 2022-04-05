@@ -19,7 +19,7 @@ We aim to create deep-learning based models that can classify human emotions.
 
 The depth of representations is of central importance for many visual recognition tasks. However, training Deep neural networks is difficult. The two widely used models to overcome these limitations are ResNets and DenseNet. ResNets use skip connections from initial layers to later ones to reformulate the layers as learning residual functions with reference to the layer inputs and thus ease the training of substantially deep networks<sup>[2]</sup>. Dense Convolutional Network (DenseNet), connects each layer to every other layer in a feed-forward fashion and help alleviate the vanishing-gradient problem, strengthen feature propagation, encourage feature reuse, and substantially reduce the number of parameters<sup>[1]</sup>. Different CNN architectures and CNN-LSTMs for accurate detection of human emotions have been explored in literature.<sup>[3]</sup>
 
-## Methods 
+## Methods and Results
 
 ### EDA (Exploratory Data Analysis): 
 
@@ -46,22 +46,7 @@ To visualize the variation in the given collection of images and compare them in
 <p align = "center"> <img width="857" alt="image" src="https://user-images.githubusercontent.com/41327028/161566805-44d6e31c-e7ef-404d-aee9-8cd27cf4b1a5.png"> </p>
 <p align = "center"> Fig.5: Eigenface by emotion </p>
 
-
- 
-
-
-### Modelling: 
-
-<!-- We will be using proven convolutional neural network architectures for image classification. We plan to consider a few candidate models: 
-* Vanilla Convolutional Neural Network
-* ResNet variants: 18, 34, 50, 101 
-* DenseNet 
-
-In addition to the different Neural network architectures, we also plan to perform:
-* Image Augmentation: To improve generalization accuracies of the models  
-* Learning Rate Finding & Scheduling: To get optimal learning rate for different stages of training the models 
-* Transfer Learning: To utilize the feature representation from the same models trained on larger datasets 
-* Visualization of activations and kernels: To understand feature representations of different emotions and the learned kernels.  -->
+### Modeling:
 
 #### ResNet18
 
@@ -85,7 +70,18 @@ We get the following visualization for the training set embeddings -
 <p align = "center"> Fig.6: t-SNE plot</p>
 Form the above visalization, we can observe that the current model is susceptible to confuse between 'Sad' and 'Fear' as there is not a lot of seperation between the two classes. 
 
-## Results and Discussion 
+## Future Work and Discussion
+
+We plan to consider a few more candidate models: 
+* Vanilla Convolutional Neural Network
+* ResNet variants: 18, 34, 50, 101 
+* DenseNet 
+
+In addition to the different Neural network architectures, we also plan to perform:
+* Image Augmentation: To improve generalization accuracies of the models  
+* Learning Rate Finding & Scheduling: To get optimal learning rate for different stages of training the models 
+* Transfer Learning: To utilize the feature representation from the same models trained on larger datasets 
+* Visualization of activations and kernels: To understand feature representations of different emotions and the learned kernels.
 
 Metrics to be considered:
 * Accuracy, Precision, Recall, F-Beta Score
