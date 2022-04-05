@@ -52,6 +52,13 @@ To visualize the variation in the given collection of images and compare them in
 
 In order to truly understand the performance of proposed CNN models, we decided to first explore baseline traditional classification algorithms like Logistic Regression, Linear SVM, SVM with RBF and Random Forest. We conducted PCA of the given dataset and observed that 103 components are required in order to explain 90% of the variance in the data. The validation and test set accuracies of the four models were obtained as shown in the table below:
 
+Model	Accuracies	
+	Validation set	Test set
+Logistic Regression	32%	33%
+Linear SVC	35%	36%
+SVM with RBF	43%	43%
+Random Forest	41%	42%
+![image](https://user-images.githubusercontent.com/95876386/161787367-cff7ed47-0d22-40e0-91ab-261f60bd4cfd.png)
 
 
 
