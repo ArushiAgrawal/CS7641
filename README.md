@@ -74,7 +74,7 @@ Form the above visalization, we can observe that the current model is susceptibl
 
 We plan to consider a few more candidate models: 
 * Vanilla Convolutional Neural Network
-* ResNet variants: 18, 34, 50, 101 
+* ResNet variants: 34, 50, 101 
 * DenseNet 
 
 In addition to the different Neural network architectures, we also plan to perform:
