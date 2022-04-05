@@ -42,7 +42,7 @@ For understanding the difference between the images belonging to different emoti
 <p align = "center"> Fig.4: Average face by emotion </p>
 
 
-To visualize the variation in the given collection of images and compare them in a holistic manner, we explored <b> Eigenfaces </b>. The eigenfaces are the principal components of a distribution of faces, basically, the eigenvectors of the covariance matrix of the set of face images. We have considered the first eigen vector (corresponding to the maximum eigen value) for plotting the below images. 
+To visualize the variation in the given collection of images and compare them in a holistic manner, we explored <b> Eigenfaces</b>. The eigenfaces are the principal components of a distribution of faces, basically, the eigenvectors of the covariance matrix of the set of face images. We have considered the first eigen vector (corresponding to the maximum eigen value) for plotting the below images. 
 <p align = "center"> <img width="857" alt="image" src="https://user-images.githubusercontent.com/41327028/161566805-44d6e31c-e7ef-404d-aee9-8cd27cf4b1a5.png"> </p>
 <p align = "center"> Fig.5: Eigenface by emotion </p>
 
