@@ -78,9 +78,10 @@ In order to investigate the model further, we also plot the Top-3 accuracies cur
 
 We get the following visualization for the training set embeddings - 
 <p align = "center"> <img width="400" alt="image" src="https://user-images.githubusercontent.com/12424401/161621666-f802f29e-9155-4bfa-9602-c03dec5be01b.png"> </p>
-<p align = "center"> Fig.8: t-SNE plot</p>
-Form the above visalization, we can observe that the current model is susceptible to confuse between 'Sad' and 'Fear' as there is not a lot of seperation between the two classes. We have also visualized the validation data.
+<p align = "center"> Fig.8: t-SNE plot for training data embeddings</p>
+Form the above visalization, we can observe that the current model is susceptible to confuse between 'Sad' and 'Fear' as there is not a lot of seperation between the two classes. We have also visualized the validation data -
 <p align = "center"> <img width="400" alt="image" src="https://user-images.githubusercontent.com/12424401/161788108-92583917-87b7-4845-b793-d10db78b3ae0.png"> </p>
+<p align = "center"> Fig.9: t-SNE plot for validation data embeddings</p>
 We can clearly see that only 'Happy' and 'Surprise' classes have been clustered to some extent which is in line with our confusion matrix results. There is no clear seperation between other classes. The model suffers from high variance and improving generalization will be our next step.
 
 
