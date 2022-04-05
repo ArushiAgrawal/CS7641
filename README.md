@@ -57,9 +57,13 @@ In order to investigate the model further, we also plot the Top-3 accuracies cur
 <p align="center">
   <img img width="600" src="https://user-images.githubusercontent.com/29612754/161646159-2e76498c-1349-445d-b0a5-593f3e73441b.png">
 </p>
+<p align = "center"> Fig.6 Model Performance. </p>
+
 <p align="center">
   <img img width="300" src="https://user-images.githubusercontent.com/29612754/161646267-5ab242df-a785-4cc5-9274-0d51582346d5.png">
 </p>
+<p align = "center"> Fig.7 Confusion matrix for test images. </p>
+
 
 #### ResNet18 evaluation using t-SNE
 
@@ -67,7 +71,7 @@ In order to investigate the model further, we also plot the Top-3 accuracies cur
 
 We get the following visualization for the training set embeddings - 
 <p align = "center"> <img width="500" alt="image" src="https://user-images.githubusercontent.com/12424401/161621666-f802f29e-9155-4bfa-9602-c03dec5be01b.png"> </p>
-<p align = "center"> Fig.6: t-SNE plot</p>
+<p align = "center"> Fig.8: t-SNE plot</p>
 Form the above visalization, we can observe that the current model is susceptible to confuse between 'Sad' and 'Fear' as there is not a lot of seperation between the two classes. 
 
 ## Future Work and Discussion
