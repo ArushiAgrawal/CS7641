@@ -53,9 +53,9 @@ To visualize the variation in the given collection of images and compare them in
 In order to truly understand the performance of proposed CNN models, we decided to first explore baseline traditional classification algorithms like Logistic Regression, Linear SVM, SVM with RBF and Random Forest. We conducted PCA of the given dataset and observed that 103 components are required in order to explain 90% of the variance in the data. The validation and test set accuracies of the four models were obtained as shown in the table below:
 
 <p align="center">
-  ![image](https://user-images.githubusercontent.com/95876386/161787367-cff7ed47-0d22-40e0-91ab-261f60bd4cfd.png)
+  <img width="417" alt="image" src="https://user-images.githubusercontent.com/41327028/164942857-7b3835de-defb-4449-8b6a-01503cd13e1b.png">
 </p>
-<p align = "center"> Fig.6 Model Performance </p>
+<p align = "center"> Fig.6 Baseline Model Performance </p>
 
 
 #### Convolutional Neural Network 
@@ -66,8 +66,14 @@ We have created a neetwork with the following structure -
 <p align="center">
   <img width="526" alt="image" src="https://user-images.githubusercontent.com/41327028/164942790-9015a3b8-9496-403d-991e-dfd5d3e0a6c0.png">
 </p>
-<p align = "center"> Fig.6 CNN </p>
+<p align = "center"> Fig.7 CNN </p>
 
+In order to investigate the model further, we also plot the Top-3 accuracies curve which represents how well the model performed in order to predict a correct image class, within the top 3 classes having the highest softmax probabilities. We also generated the confusion matrix of the test dataset to understand which emotion classes are easy to classify and which emotion pairs are confusing. We found that the model performed really well with the "Happy" class, whereas the "Neutral" class was often confused with the "Sad" class and vice versa. Further, a good proportion of images in "Fear" class also got mis-classified as "Sad".
+
+<p align="center">
+  <img width="629" alt="image" src="https://user-images.githubusercontent.com/41327028/164943307-26e2c14c-aafe-4421-bd12-7b8f5d027b1b.png">
+</p>
+<p align = "center"> Fig.7 Model Performance </p>
 
 
 #### ResNet18
