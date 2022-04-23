@@ -71,17 +71,21 @@ We have created a neetwork with the following structure -
 In order to investigate the model further, we also plot the Top-3 accuracies curve which represents how well the model performed in order to predict a correct image class, within the top 3 classes having the highest softmax probabilities. We also generated the confusion matrix of the test dataset to understand which emotion classes are easy to classify and which emotion pairs are confusing. We found that the model performed really well with the "Happy" class, whereas the "Neutral" class was often confused with the "Sad" class and vice versa. Further, a good proportion of images in "Fear" class also got mis-classified as "Sad".
 
 <p align="center">
-  <img width="629" alt="image" src="https://user-images.githubusercontent.com/41327028/164943307-26e2c14c-aafe-4421-bd12-7b8f5d027b1b.png">
+  <img width="624" alt="image" src="https://user-images.githubusercontent.com/41327028/164945939-dcbec7c8-bb1a-45b4-82b6-90cb80001d92.png">
 </p>
 <p align = "center"> Fig.7 Model Performance </p>
 
 <p align="center">
-  <img width="396" alt="image" src="https://user-images.githubusercontent.com/41327028/164943949-90c504bd-9027-4f03-b787-1bbc67357665.png">
+  <img width="399" alt="image" src="https://user-images.githubusercontent.com/41327028/164946094-5a0ae07a-d008-4c51-b12c-9bc2a031e9ba.png">
 </p>
 <p align = "center"> Fig.7 Model Performance </p>
 
 
-Image augmentation
+# Image augmentation 
+
+Image augmentation is a technique used to artifically create new images using the existing images. It creates variation in the training dataset which 
+can improve the performance and ability of the model to generailze. These images are created using transformations that include a range of operations like shifts, flips, zooms, etc. 
+
 
 
 #### ResNet18
