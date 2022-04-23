@@ -94,7 +94,7 @@ In order to investigate the model further, we also plot the Top-3 accuracies cur
 <p align = "center"> Fig.6 Model Performance </p>
 
 <p align="center">
-  <img width="407" alt="image" src="https://user-images.githubusercontent.com/41327028/164943864-6db56251-770d-42ae-965c-c9427866fa36.png">
+  <img width="400" alt="image" src="https://user-images.githubusercontent.com/41327028/164944226-f49b4691-70f7-4046-a30e-78829cd56a15.png">
 </p>
 <p align = "center"> Fig.7 Confusion matrix for test images </p>
 
