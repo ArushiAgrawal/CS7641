@@ -55,7 +55,15 @@ In order to truly understand the performance of proposed CNN models, we decided 
 ![image](https://user-images.githubusercontent.com/95876386/161787367-cff7ed47-0d22-40e0-91ab-261f60bd4cfd.png)
 
 
-#### Vanilla Convolutional Neural Network 
+#### Convolutional Neural Network 
+
+CNNs are the reguarized versions of the mulilayer perceptrons. 
+
+We have created a neetwork with the following structure -
+<p align="center">
+  <img width="526" alt="image" src="https://user-images.githubusercontent.com/41327028/164942790-9015a3b8-9496-403d-991e-dfd5d3e0a6c0.png">
+</p>
+<p align = "center"> Fig.6 CNN </p>
 
 
 
