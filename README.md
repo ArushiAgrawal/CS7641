@@ -55,6 +55,10 @@ In order to truly understand the performance of proposed CNN models, we decided 
 ![image](https://user-images.githubusercontent.com/95876386/161787367-cff7ed47-0d22-40e0-91ab-261f60bd4cfd.png)
 
 
+#### Vanilla Convolutional Neural Network 
+
+
+
 #### ResNet18
 
 Residual networks have shortcut connections (skip-connections) which turn a deep network into its counterpart residual version.  This enables gradients to flow directly through the skip connections backwards from later layers to initial layers and thus helps overcome the vanishing gradient problem to a great extent. ResNet consists on one convolution and pooling layer followed by repetition of this layers. We have evaluated ResNet18 CNN architecture to perform this multiclass classification. We generated the accuracy curves for the training and the validation set as the model kept learning. We got the validation and test set accuracies as 62.7% and 61.1% respectively. We see that the model is overfitting, so our next step is to improve its generalization accuracy using implicit or explicit regularization techniques like image augmentation, dropout layers etc.
