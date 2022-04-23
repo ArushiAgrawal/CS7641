@@ -60,13 +60,14 @@ In order to truly understand the performance of proposed CNN models, we decided 
 
 #### Convolutional Neural Network 
 
-CNNs are the reguarized versions of the mulilayer perceptrons. 
+CNNs are the reguarized versions of the mulilayer perceptrons. CNNs take advantage of the hierarchical pattern in the data and assemble patterns of increasing complexity using smaller and simpler patterns embossed in the filters. As compared to the 'fully connected' layers, CNNs are at a lower extreme in comparision to the connections. 
 
-We have created a neetwork with the following structure -
+While defining the convolutional layers, we have used six convolution layers using a kernel of size (3,3) and 'Relu' activation function. Each conv layer is followed by a maxpool layer. After the convolution bocks, the neurons are flattened with the addition of a dense layer. At last, softmax activation function is used to calculate the probability for each class. 
+
 <p align="center">
   <img width="526" alt="image" src="https://user-images.githubusercontent.com/41327028/164942790-9015a3b8-9496-403d-991e-dfd5d3e0a6c0.png">
 </p>
-<p align = "center"> Fig.7 CNN </p>
+<p align = "center"> Fig.7 CNN structure </p>
 
 In order to investigate the model further, we also plot the Top-3 accuracies curve which represents how well the model performed in order to predict a correct image class, within the top 3 classes having the highest softmax probabilities. We also generated the confusion matrix of the test dataset to understand which emotion classes are easy to classify and which emotion pairs are confusing. We found that the model performed really well with the "Happy" class, whereas the "Neutral" class was often confused with the "Sad" class and vice versa. Further, a good proportion of images in "Fear" class also got mis-classified as "Sad".
 
@@ -81,18 +82,19 @@ In order to investigate the model further, we also plot the Top-3 accuracies cur
 <p align = "center"> Fig.7 Model Performance </p>
 
 
-# Image augmentation 
+##### Image augmentation 
 
 Image augmentation is a technique used to artifically create new images using the existing images. It creates variation in the training dataset which 
 can improve the performance and ability of the model to generailze. These images are created using transformations that include a range of operations like shifts, flips, zooms, etc. 
 
+We used image augmentation and then tried fitting the same nueral network as stated above. However there wasn't much improvement in the train and validation accuracies. 
 
 
 #### ResNet18
 
 Residual networks have shortcut connections (skip-connections) which turn a deep network into its counterpart residual version.  This enables gradients to flow directly through the skip connections backwards from later layers to initial layers and thus helps overcome the vanishing gradient problem to a great extent. ResNet consists on one convolution and pooling layer followed by repetition of this layers. We have evaluated ResNet18 CNN architecture to perform this multiclass classification. We generated the accuracy curves for the training and the validation set as the model kept learning. We got the validation and test set accuracies as 62.7% and 61.1% respectively. We see that the model is overfitting, so our next step is to improve its generalization accuracy using implicit or explicit regularization techniques like image augmentation, dropout layers etc.
 
-In order to investigate the model further, we also plot the Top-3 accuracies curve which represents how well the model performed in order to predict a correct image class, within the top 3 classes having the highest softmax probabilities. We also generated the confusion matrix of the test dataset to understand which emotion classes are easy to classify and which emotion pairs are confusing. We found that the model performed really well with the "Happy" class, whereas the "Neutral" class was often confused with the "Sad" class and vice versa. Further, a good proportion of images in "Fear" class also got mis-classified as "Sad".
+Top-3 accuracies along with the confusion matrix of the test dataset has been plotted below. We found that the model performed really well with the "Happy" class, whereas the "Neutral" class was often confused with the "Sad" class and vice versa. Further, a good proportion of images in "Fear" class also got mis-classified as "Sad".
 
 <p align="center">
   <img img width="600" src="https://user-images.githubusercontent.com/29612754/161646159-2e76498c-1349-445d-b0a5-593f3e73441b.png">
