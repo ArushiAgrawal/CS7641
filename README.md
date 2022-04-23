@@ -75,6 +75,12 @@ In order to investigate the model further, we also plot the Top-3 accuracies cur
 </p>
 <p align = "center"> Fig.7 Model Performance </p>
 
+<p align="center">
+  <img width="396" alt="image" src="https://user-images.githubusercontent.com/41327028/164943949-90c504bd-9027-4f03-b787-1bbc67357665.png">
+</p>
+<p align = "center"> Fig.7 Model Performance </p>
+
+
 
 #### ResNet18
 
