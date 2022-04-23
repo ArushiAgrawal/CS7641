@@ -81,6 +81,8 @@ In order to investigate the model further, we also plot the Top-3 accuracies cur
 <p align = "center"> Fig.7 Model Performance </p>
 
 
+Image augmentation
+
 
 #### ResNet18
 
