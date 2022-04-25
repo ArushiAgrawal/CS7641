@@ -85,16 +85,13 @@ In order to investigate the model further, we also plot the Top-3 accuracies cur
 ##### Image augmentation 
 
 Image augmentation is a technique used to artifically create new images using the existing images. It creates variation in the training dataset which 
-can improve the performance and ability of the model to generailze. These images are created using transformations that include a range of operations like shifts, flips, zooms, etc. 
+can improve the performance and ability of the model to generailze. These images are created using transformations that include a range of operations like shifts, flips, zooms, random rotation, gaussian blur, random perspective, random sharpness adjusts and normalization. The following picture shows some images from the training set after image augmentation techniques were applied. 
 
 <p align="center">
   <img width="1039" alt="image" src="https://user-images.githubusercontent.com/29612754/165002826-6388ba60-fb57-4d0d-abc6-ef61629a5e65.png">
 </p>
 
-
-
-
-We used image augmentation and then tried fitting the same nueral network as stated above. However there wasn't much improvement in the train and validation accuracies. 
+We used image augmentation and then tried fitting the same nueral network as stated above. However there wasn't much improvement in the train and validation accuracies in the vanilla CNN network. 
 
 
 #### ResNet18
