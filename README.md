@@ -91,12 +91,12 @@ can improve the performance and ability of the model to generailze. These images
   <img width="1039" alt="image" src="https://user-images.githubusercontent.com/29612754/165002826-6388ba60-fb57-4d0d-abc6-ef61629a5e65.png">
 </p>
 
-We used image augmentation and then tried fitting the same nueral network as stated above. However there wasn't much improvement in the train and validation accuracies in the vanilla CNN network. 
+We used image augmentation and then tried fitting the same nueral network as stated above. However there wasn't much improvement in the train and validation accuracies in the vanilla CNN network. The deeper ResNets seemed to have benefitted from this process quite a lot as the overfitting problem vanished when used with early-stopping while getting appreciable training and test accuracies.
 
 
-#### ResNet18
+#### ResNets
 
-Residual networks have shortcut connections (skip-connections) which turn a deep network into its counterpart residual version.  This enables gradients to flow directly through the skip connections backwards from later layers to initial layers and thus helps overcome the vanishing gradient problem to a great extent. ResNet consists on one convolution and pooling layer followed by repetition of this layers. We have evaluated ResNet18 CNN architecture to perform this multiclass classification. We generated the accuracy curves for the training and the validation set as the model kept learning. We got the validation and test set accuracies as 62.7% and 61.1% respectively. We see that the model is overfitting, so our next step is to improve its generalization accuracy using implicit or explicit regularization techniques like image augmentation, dropout layers etc.
+Residual networks have shortcut connections (skip-connections) which turn a deep network into its counterpart residual version.  This enables gradients to flow directly through the skip connections backwards from later layers to initial layers and thus helps overcome the vanishing gradient problem to a great extent. ResNet consists on one convolution and pooling layer followed by repetition of this layers. Starting with the basic version, we have evaluated ResNet18 CNN architecture to perform this multiclass classification. We generated the accuracy curves for the training and the validation set as the model kept learning. We got the validation and test set accuracies as 62.7% and 61.1% respectively. We see that the model is overfitting, so our next step is to improve its generalization accuracy using implicit or explicit regularization techniques like image augmentation, dropout layers etc.
 
 Top-3 accuracies along with the confusion matrix of the test dataset has been plotted below. We found that the model performed really well with the "Happy" class, whereas the "Neutral" class was often confused with the "Sad" class and vice versa. Further, a good proportion of images in "Fear" class also got mis-classified as "Sad".
 
@@ -109,6 +109,14 @@ Top-3 accuracies along with the confusion matrix of the test dataset has been pl
   <img width="400" alt="image" src="https://user-images.githubusercontent.com/41327028/164944226-f49b4691-70f7-4046-a30e-78829cd56a15.png">
 </p>
 <p align = "center"> Fig.7 Confusion matrix for test images </p>
+
+To overcome low validation and test accuracies, we employed deeper networks and image augmentation techniques respectively. We trained ResNet 18 (again), ResNet34 and ResNet101 and experimented with batch sizes & number of epochs to improve the accuracies. After implementing image augmentation in the training images, we were able to overcome the ovefitting problem as shown in the accuracy curves. 
+
+<p align="center">
+<img width="452" alt="image" src="https://user-images.githubusercontent.com/29612754/165004026-7f505c30-4d0e-4f74-ad88-4e7fcc640bf0.png">
+</p>
+
+
 
 
 #### ResNet18 evaluation using t-SNE
