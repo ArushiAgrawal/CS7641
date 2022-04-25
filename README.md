@@ -90,6 +90,7 @@ can improve the performance and ability of the model to generailze. These images
 <p align="center">
   <img width="1039" alt="image" src="https://user-images.githubusercontent.com/29612754/165002826-6388ba60-fb57-4d0d-abc6-ef61629a5e65.png">
 </p>
+<p align = "center"> Fig.XX Augmented images from the Training-set </p>
 
 We used image augmentation and then tried fitting the same nueral network as stated above. However there wasn't much improvement in the train and validation accuracies in the vanilla CNN network. The deeper ResNets seemed to have benefitted from this process quite a lot as the overfitting problem vanished when used with early-stopping while getting appreciable training and test accuracies.
 
@@ -115,6 +116,7 @@ To overcome low validation and test accuracies, we employed deeper networks and 
 <p align="center">
 <img width="452" alt="image" src="https://user-images.githubusercontent.com/29612754/165004026-7f505c30-4d0e-4f74-ad88-4e7fcc640bf0.png">
 </p>
+<p align = "center"> Fig.XX Model Performance comparison across models </p>
 
 Also, the test accuracies have improved quite a lot after regularizing the models. The best test accuracy that we could get was **66.4%** with ResNet34, which places us in **top-5 on the leaderboard** of the associated Kaggle competition. The following table summarizes the model performances.
 
@@ -130,7 +132,7 @@ We generated the confusion matrix of the test dataset again with all the new mod
 <p align="center">
 <img width="756" alt="image" src="https://user-images.githubusercontent.com/29612754/165005359-52790a0c-4a0b-4a51-a5cd-dfdae994ddda.png">
  </p>
-
+ <p align = "center"> Fig.XX Comparison of confusion matrices for test-set for different models. </p>
 
 
 #### ResNet18 evaluation using t-SNE
@@ -146,11 +148,12 @@ Form the above visalization, we can observe that the current model is susceptibl
 We can clearly see that only 'Happy' and 'Surprise' classes have been clustered to some extent which is in line with our confusion matrix results. There is no clear seperation between other classes. The model suffers from high variance and improving generalization will be our next step.
 
 #### Why Poor Test Accuracies?
-This dataset has been found to have low test accuracies, with the top leaderboard accuracy being just 71%. We decided to explore further and understand what was limiting the test accuracies to the relatively low values. We exploited the last layer's class wise scores for all the mis-classified images in the test-set. We sorted (decreasing order) the mis-classified images based on the values of wrong class scores. For example, a "happy" image mis-classified as "neutral" having the neutral class score=0.7 would be placed before a "sad" image mis-classified as "surprised", with the "surprised" score being 0.6. This analysis gave us an idea of the "worst" mis-classified images. To our surprise, we discovered that most of these mis-classifications were happening because of wrong labeling of the test-set and not because was confusing between two classes. We show here top 24 images with decreasing order of mis-classification. For example, the first four images are definitely in the "happy" class as a human would see it, which the model learns as well. However, they seem to be having wrong labels as Neutral, Neutral, Sad and Neutral.
+This dataset has been found to have low test accuracies, with the top leaderboard accuracy being just 71%. We decided to explore further and understand what was limiting the test accuracies to the relatively low values. We exploited the last layer's class wise scores for all the mis-classified images in the test-set. We sorted (decreasing order) the mis-classified images based on the values of wrong class scores. For example, a "happy" image mis-classified as "neutral" having the neutral class score=0.7 would be placed before a "sad" image mis-classified as "surprised", with the "surprised" score being 0.6. This analysis gave us an idea of the "worst" mis-classified images. To our surprise, we discovered that most of these mis-classifications were happening because of wrong labeling of the test-set and not because the model was confusing between two classes. We show here top 24 images with decreasing order of mis-classification. For example, the first four images are definitely in the "happy" class as a human would see it, which the model learns as well. However, they seem to be having wrong labels as neutral, neutral, sad and neutral.
 
 <p align="center">
 <img width="1231" alt="image" src="https://user-images.githubusercontent.com/29612754/165006124-a9a40025-863d-4b7d-85ab-5b17425c446b.png">
  </p>
+ <p align = "center"> Fig.XX The worst mis-classified images tend to be wrongly labeled.</p>
 
 ## Future Work and Discussion
 
