@@ -110,14 +110,20 @@ Top-3 accuracies along with the confusion matrix of the test dataset has been pl
 </p>
 <p align = "center"> Fig.7 Confusion matrix for test images </p>
 
-To overcome low validation and test accuracies, we employed deeper networks and image augmentation techniques respectively. We trained ResNet 18 (again), ResNet34 and ResNet101 and experimented with batch sizes & number of epochs to improve the accuracies. After implementing image augmentation in the training images, we were able to overcome the ovefitting problem as shown in the accuracy curves. 
+To overcome low validation and test accuracies, we employed deeper networks and image augmentation techniques. We trained ResNet 18 (again), ResNet34 and ResNet101 and experimented with batch sizes & number of epochs to improve the accuracies. After implementing image augmentation in the training images, we were able to overcome the ovefitting problem as shown in the accuracy curves. 
 
 <p align="center">
 <img width="452" alt="image" src="https://user-images.githubusercontent.com/29612754/165004026-7f505c30-4d0e-4f74-ad88-4e7fcc640bf0.png">
 </p>
 
+Also, the test accuracies have improved quite a lot after regularizing the models. The best test accuracy that we could get was **66.4%** with ResNet34, which places us in **top-5 on the leaderboard** of the associated Kaggle competition. The following table summarizes the model performances.
 
-
+| Model | Training Accuracy | Validation Accuracy  | Test Accuracy | 
+| ------------- | ------------- | ------------- | ------------- |
+| ResNet18 (No Image Augmentation)  | 99.8%  | 62.7%  | 61.1%  |
+| ResNet18 (No Image Augmentation)  | 75.9%  | 67%  | 65.7%  |
+| ResNet34 (Image Augmentation) | 72.8%  | 66.48%  | 66.4% |
+| ResNet101 (Image Augmentation)  | 71.97%  | 65.61%  | 65.28%  |
 
 #### ResNet18 evaluation using t-SNE
 
