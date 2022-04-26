@@ -2,9 +2,9 @@
  
 ## Introduction 
 
-Facial expressions are the most universal, natural, and powerful way for human beings to convey their thoughts. Emotions don’t have a concrete definition, yet they drive every other decision made in our lives. 
+Facial expressions are the most universal, natural, and powerful way for human beings to convey their thoughts. Emotions don’t have a concrete definition, yet they drive every other decision made in our lives.
 
-Our project focuses on recognition of emotions from facial expressions. We are using [Facial Image Recognition Dataset (FER2013)](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data) – an open-source dataset containing approximately 30 thousand labelled grayscale images of faces. This dataset was published during the International Conference on Machine Learning (ICML). The emotions in the images belong to the seven categories - anger, disgust, fear, happy, sad, surprise, and neutral.
+Our project focuses on recognition of emotions from images of human faces. We are using [Facial Image Recognition Dataset (FER2013)](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data) – an open-source dataset containing approximately 30 thousand labelled grayscale images of faces. This dataset was published during the International Conference on Machine Learning (ICML). The emotions in the images belong to the seven categories - anger, disgust, fear, happy, sad, surprise, and neutral.
 
 <p align = "center"> <img width="762" alt="image" src="https://user-images.githubusercontent.com/41327028/161588858-6e6f14e4-3d7c-4883-9104-f516f378c094.png"> </p>
 <p align = "center"> Fig.1: Sample images </p>
