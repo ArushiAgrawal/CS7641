@@ -147,6 +147,15 @@ Form the above visalization, we can observe that the current model is susceptibl
 <p align = "center"> Fig.9: t-SNE plot for validation data embeddings</p>
 We can clearly see that only 'Happy' and 'Surprise' classes have been clustered to some extent which is in line with our confusion matrix results. There is no clear seperation between other classes. The model suffers from high variance and improving generalization will be our next step.
 
+#### ResNet34 evaluation using t-SNE
+For the final project submission we tried different models and ended up using Resnet34 with augmented images which gave us the best test accuracy of ~67%. This is pretty good for reference as the highest accuracy in Kaggle leaderboard is 71%. For the above model we visualized the embeddings for the dataset using t-SNE. The embeddings are of the size N X 512.
+
+<p align = "center"> <img width="400" alt="image" src="https://user-images.githubusercontent.com/12424401/165203749-d0adfe26-4c96-4deb-9c02-5def45bc06b7.png"> </p>
+<p align = "center"> Fig.10: t-SNE plot for training data embeddings</p>
+
+<p align = "center"> <img width="400" alt="image" src="https://user-images.githubusercontent.com/12424401/165204099-dcd30bf6-76e6-4aa3-82e9-c39f24915a76.png"> </p>
+<p align = "center"> Fig.11: t-SNE plot for validation data embeddings</p>
+
 #### Why Poor Test Accuracies?
 This dataset has been found to have low test accuracies, with the top leaderboard accuracy being just 71%. We decided to explore further and understand what was limiting the test accuracies to the relatively low values. We exploited the last layer's class wise scores for all the mis-classified images in the test-set. We sorted (decreasing order) the mis-classified images based on the values of wrong class scores. For example, a "happy" image mis-classified as "neutral" having the neutral class score=0.7 would be placed before a "sad" image mis-classified as "surprised", with the "surprised" score being 0.6. This analysis gave us an idea of the "worst" mis-classified images. To our surprise, we discovered that most of these mis-classifications were happening because of wrong labeling of the test-set and not because the model was confusing between two classes. We show here top 24 images with decreasing order of mis-classification. For example, the first four images are definitely in the "happy" class as a human would see it, which the model learns as well. However, they seem to be having wrong labels as neutral, neutral, sad and neutral.
 
