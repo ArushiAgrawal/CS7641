@@ -177,12 +177,6 @@ Challenges in emotion recognition:
 * It is very tough to detect all possible cues for an emotion, and some cues can be common among different emotions. e.g., Visual cues like furrowed eyebrows can mean something aside from anger, and other non-so-obvious facial cues may be subtle hints of anger. 
 * Bias based on race, gender, and age. 
 
-## Timeline and Responsibilities
-
-<p align = "center"> 
- <img width="886" alt="image" src="https://user-images.githubusercontent.com/41327028/161758365-988186d9-68ea-415c-b4d4-98881e8c113d.png">
-</p>
-
 ## References
 
 1) [Huang, Gao, Zhuang Liu, Laurens Van Der Maaten, and Kilian Q. Weinberger. "Densely connected convolutional networks." In Proceedings of the IEEE conference on computer vision and pattern recognition, pp. 4700-4708. 2017](https://arxiv.org/abs/1608.06993)
