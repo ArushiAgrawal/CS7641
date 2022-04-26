@@ -172,7 +172,7 @@ We obtained a maximum accuracy of 66.4% on the Kaggle private test set with ResN
 
 ResNet34 model also tends to predict images labelled "fear" as "sad".
 
-This dataset has been found to have low test accuracies. Upon investigation, we found that some of the mis-classified images in the test set were wrongly labeled. As our model predicted them correctly, we obtained relatively low accuracy score. 
+This dataset has been found to have low test accuracies. Upon investigation, we found that some of the misclassified images in the test set were wrongly labeled. As our model predicted them correctly, we obtained relatively low accuracy score. 
 
 Challenges in emotion recognition:
 * Different people can interpret emotions in different ways, and hence the training data may not be 100% reliable. 
