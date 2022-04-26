@@ -60,7 +60,7 @@ In order to truly understand the performance of proposed CNN models, we decided 
 
 #### Convolutional Neural Network 
 
-CNNs are the reguarized versions of the mulilayer perceptrons. CNNs take advantage of the hierarchical pattern in the data and assemble patterns of increasing complexity using smaller and simpler patterns embossed in the filters. As compared to the 'fully connected' layers, CNNs are at a lower extreme in comparision to the connections. 
+CNNs are the reguarized versions of the multilayer perceptrons. CNNs take advantage of the hierarchical pattern in the data and assemble patterns of increasing complexity using smaller and simpler patterns embossed in the filters. As compared to the 'fully connected' layers, CNNs are at a lower extreme in comparision to the connections. 
 
 While defining the convolutional layers, we have used six convolution layers using a kernel of size (3,3) and 'Relu' activation function. Each conv layer is followed by a maxpool layer. After the convolution bocks, the neurons are flattened with the addition of a dense layer. At last, softmax activation function is used to calculate the probability for each class. 
 
