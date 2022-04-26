@@ -1,4 +1,4 @@
-# Recognition of Emotions from Facial Expressions
+# Recognition of Facial Expressions
  
 ## Introduction 
 
