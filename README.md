@@ -149,7 +149,7 @@ Form the above visalization, we can observe that the current model is susceptibl
 We can clearly see that only 'Happy' and 'Surprise' classes have been clustered to some extent which is in line with our confusion matrix results. There is no clear seperation between other classes. The model suffers from high variance and improving generalization will be our next step.
 
 #### ResNet34 evaluation using t-SNE
-For the final project submission we tried different models and ended up using Resnet34 with augmented images which gave us the best test accuracy of ~67%. This is pretty good for reference as the highest accuracy in Kaggle leaderboard is 71%. For the above model we visualized the embeddings for the dataset using t-SNE. The embeddings are of the size N X 512.
+For the final project submission we tried different models and ended up using Resnet34 with augmented images which gave us the best test accuracy of 66.4%. This is pretty good for reference as the highest accuracy in Kaggle leaderboard is 71%. For the above model we visualized the embeddings for the dataset using t-SNE. The embeddings are of the size N X 512.
 
 <p align = "center"> <img width="400" alt="image" src="https://user-images.githubusercontent.com/12424401/165203749-d0adfe26-4c96-4deb-9c02-5def45bc06b7.png"> </p>
 <p align = "center"> Fig.10: t-SNE plot for training data embeddings</p>
