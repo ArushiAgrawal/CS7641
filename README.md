@@ -145,7 +145,7 @@ We get the following visualization for the training set embeddings -
 Form the above visalization, we can observe that the current model is susceptible to confuse between 'Sad' and 'Fear' as there is not a lot of seperation between the two classes. We have also visualized the validation data -
 <p align = "center"> <img width="400" alt="image" src="https://user-images.githubusercontent.com/12424401/161788108-92583917-87b7-4845-b793-d10db78b3ae0.png"> </p>
 <p align = "center"> Fig.16: t-SNE plot for validation data embeddings</p>
-We can clearly see that only 'Happy' and 'Surprise' classes have been clustered to some extent which is in line with our confusion matrix results. There is no clear seperation between other classes. The model suffers from high variance and improving generalization will be our next step.
+We can clearly see that only 'Happy' and 'Surprise' classes have been clustered to some extent which is in line with our confusion matrix results. There is no clear separation between other classes. The model suffers from high variance and improving generalization will be our next step.
 
 #### ResNet34 evaluation using t-SNE
 For the final project submission we tried different models and ended up using Resnet34 with augmented images which gave us the best test accuracy of 66.4%. This is pretty good for reference as the highest accuracy in Kaggle leaderboard is 71%. For the above model we visualized the embeddings for the dataset using t-SNE. The embeddings are of the size N X 512.
