@@ -162,7 +162,7 @@ This dataset has been found to have low test accuracies, with the top leaderboar
 <p align="center">
 <img width="1231" alt="image" src="https://user-images.githubusercontent.com/29612754/165006124-a9a40025-863d-4b7d-85ab-5b17425c446b.png">
  </p>
- <p align = "center"> Fig.XX The worst mis-classified images tend to be wrongly labeled.</p>
+ <p align = "center"> Fig.12 The worst mis-classified images tend to be wrongly labeled.</p>
 
 ## Future Work and Discussion
 
