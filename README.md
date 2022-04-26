@@ -164,23 +164,13 @@ This dataset has been found to have low test accuracies, with the top leaderboar
  </p>
  <p align = "center"> Fig.12 The worst mis-classified images tend to be wrongly labeled.</p>
 
-## Future Work and Discussion
+## Conclusion
 
-We plan to consider a few more candidate models: 
-* Vanilla Convolutional Neural Network
-* ResNet variants: 34, 50, 101 
-* DenseNet 
+We obtained a maximum accuracy of 66.4% on the Kaggle private test set with ResNet34, which places us in top-5 on the leaderboard of the associated Kaggle competition. This model also has a ~93% top-3-accuracy on the validation set.
 
-In addition to the different Neural network architectures, we also plan to perform:
-* Image Augmentation: To improve generalization accuracies of the models  
-* Learning Rate Finding & Scheduling: To get optimal learning rate for different stages of training the models 
-* Transfer Learning: To utilize the feature representation from the same models trained on larger datasets 
-* Visualization of activations and kernels: To understand feature representations of different emotions and the learned kernels.
+ResNet34 model also tends to predict images labelled "fear" as "sad".
 
-Metrics to be considered:
-* Accuracy, Precision, Recall, F-Beta Score
-* Evaluation of models’ performances using Top-k Accuracy & confusion matrix.  
-* Evaluation of incorrect predictions: To analyze which emotion classes are hard to tell apart by the models 
+This dataset has been found to have low test accuracies. Upon investigation, we found that some of the mis-classified images in the test set were wrongly labeled. As our model predicted them correctly, we obtained relatively low accuracy score. 
 
 Challenges in emotion recognition:
 * Different people can interpret emotions in different ways, and hence the training data may not be 100% reliable. 
