@@ -81,6 +81,7 @@ In order to investigate the model further, we also plot the Top-3 accuracies cur
 </p>
 <p align = "center"> Fig.7 Model Performance </p>
 
+Similar to the Resnet18 plot, we can see that the agent confuses Fear with Sad in the confusion matrix. This is inline  with the visualization in Training t-SNE, as the Fear data points (indicated in yellow) is spread out across points near Sad(green)
 
 ##### Image augmentation 
 
