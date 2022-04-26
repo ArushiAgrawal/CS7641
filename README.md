@@ -62,7 +62,7 @@ In order to truly understand the performance of proposed CNN models, we decided 
 
 CNNs are the reguarized versions of the multilayer perceptrons. CNNs take advantage of the hierarchical pattern in the data and assemble patterns of increasing complexity using smaller and simpler patterns embossed in the filters. As compared to the 'fully connected' layers, CNNs are at a lower extreme in comparision to the connections. 
 
-While defining the convolutional layers, we have used six convolution layers using a kernel of size (3,3) and 'Relu' activation function. Each conv layer is followed by a maxpool layer. After the convolution blocks, the neurons are flattened with the addition of a dense layer. At last, softmax activation function is used to calculate the probability for each class. 
+While defining the convolutional layers, we have used six convolution layers using a kernel of size (3,3) and 'ReLU' activation function. Each convolution layer is followed by a maxpooling layer. After the convolution layers, the neurons are flattened with the addition of a dense layer. At last, softmax activation function is used to calculate the probability for each class. 
 
 <p align="center">
   <img width="526" alt="image" src="https://user-images.githubusercontent.com/41327028/164942790-9015a3b8-9496-403d-991e-dfd5d3e0a6c0.png">
@@ -81,11 +81,11 @@ In order to investigate the model further, we also plot the Top-3 accuracies cur
 </p>
 <p align = "center"> Fig.9: Model Performance </p>
 
-Similar to the Resnet18 plot, we can see that the agent confuses Fear with Sad in the confusion matrix. This is inline  with the visualization in Training t-SNE, as the Fear data points (indicated in yellow) is spread out across points near Sad(green)
+Similar to the Resnet18 plot, we can see that the agent confuses Fear with Sad in the confusion matrix. This is also in line  with our t-SNE based visualization results (discussed later).
 
-##### Image augmentation 
+##### Image Augmentation 
 
-Image augmentation is a technique used to artifically create new images using the existing images. It creates variation in the training dataset which 
+Image Augmentation is a technique used to artifically create new images using the existing images. It creates variation in the training dataset which 
 can improve the performance and ability of the model to generailze. These images are created using transformations that include a range of operations like shifts, flips, zooms, random rotation, gaussian blur, random perspective, random sharpness adjusts and normalization. The following picture shows some images from the training set after image augmentation techniques were applied. 
 
 <p align="center">
