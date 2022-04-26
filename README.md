@@ -67,19 +67,19 @@ While defining the convolutional layers, we have used six convolution layers usi
 <p align="center">
   <img width="526" alt="image" src="https://user-images.githubusercontent.com/41327028/164942790-9015a3b8-9496-403d-991e-dfd5d3e0a6c0.png">
 </p>
-<p align = "center"> Fig.7 CNN structure </p>
+<p align = "center"> Fig.7 CNN architecture </p>
 
 In order to investigate the model further, we also plot the Top-3 accuracies curve which represents how well the model performed in order to predict a correct image class, within the top 3 classes having the highest softmax probabilities. We also generated the confusion matrix of the test dataset to understand which emotion classes are easy to classify and which emotion pairs are confusing. We found that the model performed really well with the "Happy" class, whereas the "Neutral" class was often confused with the "Sad" class and vice versa. Further, a good proportion of images in "Fear" class also got mis-classified as "Sad".
 
 <p align="center">
   <img width="624" alt="image" src="https://user-images.githubusercontent.com/41327028/164945939-dcbec7c8-bb1a-45b4-82b6-90cb80001d92.png">
 </p>
-<p align = "center"> Fig.7 Model Performance </p>
+<p align = "center"> Fig.8 Model Performance </p>
 
 <p align="center">
   <img width="399" alt="image" src="https://user-images.githubusercontent.com/41327028/164946094-5a0ae07a-d008-4c51-b12c-9bc2a031e9ba.png">
 </p>
-<p align = "center"> Fig.7 Model Performance </p>
+<p align = "center"> Fig.9 Model Performance </p>
 
 Similar to the Resnet18 plot, we can see that the agent confuses Fear with Sad in the confusion matrix. This is inline  with the visualization in Training t-SNE, as the Fear data points (indicated in yellow) is spread out across points near Sad(green)
 
@@ -91,7 +91,7 @@ can improve the performance and ability of the model to generailze. These images
 <p align="center">
   <img width="1039" alt="image" src="https://user-images.githubusercontent.com/29612754/165002826-6388ba60-fb57-4d0d-abc6-ef61629a5e65.png">
 </p>
-<p align = "center"> Fig.XX Augmented images from the Training-set </p>
+<p align = "center"> Fig.10 Augmented images from the Training-set </p>
 
 We used image augmentation and then tried fitting the same nueral network as stated above. However there wasn't much improvement in the train and validation accuracies in the vanilla CNN network. The deeper ResNets seemed to have benefitted from this process quite a lot as the overfitting problem vanished when used with early-stopping while getting appreciable training and test accuracies.
 
@@ -105,19 +105,19 @@ Top-3 accuracies along with the confusion matrix of the test dataset has been pl
 <p align="center">
   <img img width="600" src="https://user-images.githubusercontent.com/29612754/161646159-2e76498c-1349-445d-b0a5-593f3e73441b.png">
 </p>
-<p align = "center"> Fig.6 Model Performance </p>
+<p align = "center"> Fig.11 Model Performance </p>
 
 <p align="center">
   <img width="400" alt="image" src="https://user-images.githubusercontent.com/41327028/164944226-f49b4691-70f7-4046-a30e-78829cd56a15.png">
 </p>
-<p align = "center"> Fig.7 Confusion matrix for test images </p>
+<p align = "center"> Fig.12 Confusion matrix for test images </p>
 
 To overcome low validation and test accuracies, we employed deeper networks and image augmentation techniques. We trained ResNet 18 (again), ResNet34 and ResNet101 and experimented with batch sizes & number of epochs to improve the accuracies. After implementing image augmentation in the training images, we were able to overcome the ovefitting problem as shown in the accuracy curves. We also witnessed the peculiar case of double descent for the ResNet101 model, which is expected of very deep neural network architectures.
 
 <p align="center">
 <img width="452" alt="image" src="https://user-images.githubusercontent.com/29612754/165004026-7f505c30-4d0e-4f74-ad88-4e7fcc640bf0.png">
 </p>
-<p align = "center"> Fig.XX Model Performance comparison across models </p>
+<p align = "center"> Fig.13 Model Performance comparison across models </p>
 
 Also, the test accuracies have improved quite a lot after regularizing the models. The best test accuracy that we could get was **66.4%** with ResNet34, which places us in **top-5 on the leaderboard** of the associated Kaggle competition. The following table summarizes the model performances.
 
@@ -133,7 +133,7 @@ We generated the confusion matrix of the test dataset again with all the new mod
 <p align="center">
 <img width="756" alt="image" src="https://user-images.githubusercontent.com/29612754/165005359-52790a0c-4a0b-4a51-a5cd-dfdae994ddda.png">
  </p>
- <p align = "center"> Fig.XX Comparison of confusion matrices for test-set for different models. </p>
+ <p align = "center"> Fig.14 Comparison of confusion matrice for different models (test-set) </p>
 
 
 #### ResNet18 evaluation using t-SNE
@@ -142,20 +142,20 @@ We generated the confusion matrix of the test dataset again with all the new mod
 
 We get the following visualization for the training set embeddings - 
 <p align = "center"> <img width="400" alt="image" src="https://user-images.githubusercontent.com/12424401/161621666-f802f29e-9155-4bfa-9602-c03dec5be01b.png"> </p>
-<p align = "center"> Fig.8: t-SNE plot for training data embeddings</p>
+<p align = "center"> Fig.15: t-SNE plot for training data embeddings</p>
 Form the above visalization, we can observe that the current model is susceptible to confuse between 'Sad' and 'Fear' as there is not a lot of seperation between the two classes. We have also visualized the validation data -
 <p align = "center"> <img width="400" alt="image" src="https://user-images.githubusercontent.com/12424401/161788108-92583917-87b7-4845-b793-d10db78b3ae0.png"> </p>
-<p align = "center"> Fig.9: t-SNE plot for validation data embeddings</p>
+<p align = "center"> Fig.16: t-SNE plot for validation data embeddings</p>
 We can clearly see that only 'Happy' and 'Surprise' classes have been clustered to some extent which is in line with our confusion matrix results. There is no clear seperation between other classes. The model suffers from high variance and improving generalization will be our next step.
 
 #### ResNet34 evaluation using t-SNE
 For the final project submission we tried different models and ended up using Resnet34 with augmented images which gave us the best test accuracy of 66.4%. This is pretty good for reference as the highest accuracy in Kaggle leaderboard is 71%. For the above model we visualized the embeddings for the dataset using t-SNE. The embeddings are of the size N X 512.
 
 <p align = "center"> <img width="400" alt="image" src="https://user-images.githubusercontent.com/12424401/165203749-d0adfe26-4c96-4deb-9c02-5def45bc06b7.png"> </p>
-<p align = "center"> Fig.10: t-SNE plot for training data embeddings</p>
+<p align = "center"> Fig.17: t-SNE plot for training data embeddings</p>
 
 <p align = "center"> <img width="400" alt="image" src="https://user-images.githubusercontent.com/12424401/165204099-dcd30bf6-76e6-4aa3-82e9-c39f24915a76.png"> </p>
-<p align = "center"> Fig.11: t-SNE plot for validation data embeddings</p>
+<p align = "center"> Fig.18: t-SNE plot for validation data embeddings</p>
 
 We have similar results as Resnet18, where the model confused Fear(yellow) with Sad(green) as seen in the confusion matrix. We can infer the same thing from the t-SNE visualization of training data where the data points of Fear(yellow) are spread out especially near the Sad(green) datapoints. We see similar visualizations(as Resnet18) as both the models are Resnet based and both have similar accuracies.
 
@@ -165,7 +165,7 @@ This dataset has been found to have low test accuracies, with the top leaderboar
 <p align="center">
 <img width="1231" alt="image" src="https://user-images.githubusercontent.com/29612754/165006124-a9a40025-863d-4b7d-85ab-5b17425c446b.png">
  </p>
- <p align = "center"> Fig.12 The worst mis-classified images tend to be wrongly labeled.</p>
+ <p align = "center"> Fig.19 The worst mis-classified images tend to be wrongly labeled.</p>
 
 ## Conclusion
 
