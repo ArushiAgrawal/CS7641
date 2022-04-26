@@ -7,7 +7,7 @@ Facial expression is the most universal, natural, and powerful way for human bei
 Our project focuses on recognition of facial expressions. We are using [Facial Image Recognition Dataset (FER2013)](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data) – an open-source dataset containing approximately 30 thousand labelled grayscale images of faces. This dataset was published during the International Conference on Machine Learning (ICML). The emotions in the images belong to the seven categories - anger, disgust, fear, happy, sad, surprise, and neutral.
 
 <p align = "center"> <img width="762" alt="image" src="https://user-images.githubusercontent.com/41327028/161588858-6e6f14e4-3d7c-4883-9104-f516f378c094.png"> </p>
-<p align = "center"> Fig.1 Sample images </p>
+<p align = "center"> Fig.1: Sample images </p>
  
 ## Problem Definition 
 
@@ -55,7 +55,7 @@ In order to truly understand the performance of proposed CNN models, we decided 
 <p align="center">
   <img width="417" alt="image" src="https://user-images.githubusercontent.com/41327028/164942857-7b3835de-defb-4449-8b6a-01503cd13e1b.png">
 </p>
-<p align = "center"> Fig.6 Baseline Model Performance </p>
+<p align = "center"> Fig.6: Baseline Model Performance </p>
 
 
 #### Convolutional Neural Network 
@@ -67,19 +67,19 @@ While defining the convolutional layers, we have used six convolution layers usi
 <p align="center">
   <img width="526" alt="image" src="https://user-images.githubusercontent.com/41327028/164942790-9015a3b8-9496-403d-991e-dfd5d3e0a6c0.png">
 </p>
-<p align = "center"> Fig.7 CNN architecture </p>
+<p align = "center"> Fig.7: CNN architecture </p>
 
 In order to investigate the model further, we also plot the Top-3 accuracies curve which represents how well the model performed in order to predict a correct image class, within the top 3 classes having the highest softmax probabilities. We also generated the confusion matrix of the test dataset to understand which emotion classes are easy to classify and which emotion pairs are confusing. We found that the model performed really well with the "Happy" class, whereas the "Neutral" class was often confused with the "Sad" class and vice versa. Further, a good proportion of images in "Fear" class also got mis-classified as "Sad".
 
 <p align="center">
   <img width="624" alt="image" src="https://user-images.githubusercontent.com/41327028/164945939-dcbec7c8-bb1a-45b4-82b6-90cb80001d92.png">
 </p>
-<p align = "center"> Fig.8 Model Performance </p>
+<p align = "center"> Fig.8: Model Performance </p>
 
 <p align="center">
   <img width="399" alt="image" src="https://user-images.githubusercontent.com/41327028/164946094-5a0ae07a-d008-4c51-b12c-9bc2a031e9ba.png">
 </p>
-<p align = "center"> Fig.9 Model Performance </p>
+<p align = "center"> Fig.9: Model Performance </p>
 
 Similar to the Resnet18 plot, we can see that the agent confuses Fear with Sad in the confusion matrix. This is inline  with the visualization in Training t-SNE, as the Fear data points (indicated in yellow) is spread out across points near Sad(green)
 
@@ -91,7 +91,7 @@ can improve the performance and ability of the model to generailze. These images
 <p align="center">
   <img width="1039" alt="image" src="https://user-images.githubusercontent.com/29612754/165002826-6388ba60-fb57-4d0d-abc6-ef61629a5e65.png">
 </p>
-<p align = "center"> Fig.10 Augmented images from the Training-set </p>
+<p align = "center"> Fig.10: Augmented images from the Training-set </p>
 
 We used image augmentation and then tried fitting the same nueral network as stated above. However there wasn't much improvement in the train and validation accuracies in the vanilla CNN network. The deeper ResNets seemed to have benefitted from this process quite a lot as the overfitting problem vanished when used with early-stopping while getting appreciable training and test accuracies.
 
@@ -105,19 +105,19 @@ Top-3 accuracies along with the confusion matrix of the test dataset has been pl
 <p align="center">
   <img img width="600" src="https://user-images.githubusercontent.com/29612754/161646159-2e76498c-1349-445d-b0a5-593f3e73441b.png">
 </p>
-<p align = "center"> Fig.11 Model Performance </p>
+<p align = "center"> Fig.11: Model Performance </p>
 
 <p align="center">
   <img width="400" alt="image" src="https://user-images.githubusercontent.com/41327028/164944226-f49b4691-70f7-4046-a30e-78829cd56a15.png">
 </p>
-<p align = "center"> Fig.12 Confusion matrix for test images </p>
+<p align = "center"> Fig.12: Confusion matrix for test images </p>
 
 To overcome low validation and test accuracies, we employed deeper networks and image augmentation techniques. We trained ResNet 18 (again), ResNet34 and ResNet101 and experimented with batch sizes & number of epochs to improve the accuracies. After implementing image augmentation in the training images, we were able to overcome the ovefitting problem as shown in the accuracy curves. We also witnessed the peculiar case of double descent for the ResNet101 model, which is expected of very deep neural network architectures.
 
 <p align="center">
 <img width="452" alt="image" src="https://user-images.githubusercontent.com/29612754/165004026-7f505c30-4d0e-4f74-ad88-4e7fcc640bf0.png">
 </p>
-<p align = "center"> Fig.13 Model Performance comparison across models </p>
+<p align = "center"> Fig.13: Model Performance comparison across models </p>
 
 Also, the test accuracies have improved quite a lot after regularizing the models. The best test accuracy that we could get was **66.4%** with ResNet34, which places us in **top-5 on the leaderboard** of the associated Kaggle competition. The following table summarizes the model performances.
 
@@ -133,8 +133,7 @@ We generated the confusion matrix of the test dataset again with all the new mod
 <p align="center">
 <img width="756" alt="image" src="https://user-images.githubusercontent.com/29612754/165005359-52790a0c-4a0b-4a51-a5cd-dfdae994ddda.png">
  </p>
- <p align = "center"> Fig.14 Comparison of confusion matrice for different models (test-set) </p>
-
+ <p align = "center"> Fig.14: Comparison of confusion matrice for different models (test-set) </p>
 
 #### ResNet18 evaluation using t-SNE
 
@@ -165,7 +164,7 @@ This dataset has been found to have low test accuracies, with the top leaderboar
 <p align="center">
 <img width="1231" alt="image" src="https://user-images.githubusercontent.com/29612754/165006124-a9a40025-863d-4b7d-85ab-5b17425c446b.png">
  </p>
- <p align = "center"> Fig.19 The worst mis-classified images tend to be wrongly labeled.</p>
+ <p align = "center"> Fig.19: The worst mis-classified images tend to be wrongly labeled.</p>
 
 ## Conclusion
 
